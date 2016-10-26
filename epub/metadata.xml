@@ -1,0 +1,24 @@
+<dc:identifier id="epub-id-1">urn:isbn:NNN-NN-NN-NN-n</dc:identifier>
+<meta refines="#epub-id-1" property="identifier-type" scheme="onix:codelist5">01</meta>
+<dc:title id="epub-title-1">PublishingLab Manual 2016/2017</dc:title>
+<meta refines="#epub-title-1" property="title-type">PublishingLab Manual</meta>
+<dc:publisher>PublishingLab</dc:publisher>    
+<dc:date id="epub-date">2016-06</dc:date>
+<dc:language>en-US</dc:language>
+<dc:creator id="epub-creator-0">PublishingLab Team</dc:creator>
+<meta refines="#epub-creator-0" property="role" scheme="marc:relators">aut</meta>
+<dc:contributor id="epub-contributor-1">PublishingLab Team</dc:contributor>
+<meta refines="#epub-contributor-1" property="role" scheme="marc:relators">edt</meta>
+<dc:contributor id="epub-contributor-5">Silvio Lorusso</dc:contributor>
+<meta refines="#epub-contributor-5" property="role" scheme="marc:relators">dsr</meta>
+<dc:rights>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC-BY-NC-SA 4.0)</dc:rights>
+<dc:subject>publishing, experimental, digital, books, apps, reading, manual, epub, design process, multidisciplinary teams, code, design, tools, interaction, archive, documentation, research</dc:subject>
+<dc:description>The PublishingLab is an applied research lab in the field of hybrid publishing working at the intersection of publishing and digital technology, both in print and on a screen. This manual is meant for students and professionals alike to get involved in our activities.</dc:description>
+
+
+
+
+
+
+
+
