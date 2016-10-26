@@ -87,11 +87,11 @@ The repository also includes a markdown version of *The Trial* by Franz Kafka fo
 - Shout your username so that I can add you to the repo
 - Clone this repo by running on the terminal:
 
-`git clone https://github.com/silviolorusso/make.git`
+`git clone https://github.com/silviolorusso/make-book-make-soup`
 
 and then:
 
-`cd make`
+`cd make-book-make-soup`
 
 With these commands you will download all the files included in this repo.
 
