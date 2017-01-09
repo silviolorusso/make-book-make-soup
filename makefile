@@ -7,7 +7,7 @@ icmls=$(wildcard icml/*.icml) # select all icml
 
 # just a test
 test: $(allmarkdown)
-	@echo "Markdown files:" ; 
+	@echo "Markdown files:" ;
 	@echo $(allmarkdown)
 
 
@@ -23,7 +23,7 @@ folders:
 
 
 # convert docx to md
-markdowns: $(alldocx) 
+markdowns: $(alldocx)
 	for i in $(alldocx) ; \
 	do md=md/`basename $$i .docx`.md ; \
 	echo "File" $$i $$md ; \
@@ -96,14 +96,14 @@ html: clean $(allmarkdown) book.md
 
 
 # remove outputs
-clean:  
-	rm -f md/book.md  
-	rm -f book.epub 
+clean:
+	rm -f md/book.md
+	rm -f book.epub
 	rm -f *~ */*~  # emacs files
 
 
 # Thomas Walskaar 2016 www.walska.com
-floppy: clean $(allmarkdown) book.md 
+floppy: clean $(allmarkdown) book.md
 	cd txt && pandoc \
 		--from markdown \
 		--to plain \
@@ -112,4 +112,8 @@ floppy: clean $(allmarkdown) book.md
 		../md/book.md ; \
 	rm /Volumes/FLOPPY/* ; \ # location of the floppy device
 	python ../scripts/floppynetwork.py book.txt /Volumes/FLOPPY
+	# python scripts/floppynetwork.py txt/book.txt ~/Desktop
 
+noise:
+	@echo 'Making some noise now. This might take a while.'
+	python scripts/make_noise.py
