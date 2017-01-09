@@ -113,3 +113,17 @@ floppy: clean $(allmarkdown) book.md
 	rm /Volumes/FLOPPY/* ; \ # location of the floppy device
 	python ../scripts/floppynetwork.py book.txt /Volumes/FLOPPY
 
+# Make Square (Thomas Walskaar & Fabiola Fortuna 2017)
+# Covert all of whitesspaces into black squares and all of the text and symbols into whitesspaces
+square: clean $(allmarkdown) book.md 
+	cd txt && pandoc \
+		--from markdown \
+		--to plain \
+		-s \
+		-o book.txt \
+		../md/book.md ; \
+	mkdir -p ../square
+	python scripts/square.py txt/book.txt > square/square.txt
+
+
+
