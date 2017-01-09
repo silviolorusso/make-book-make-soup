@@ -83,15 +83,6 @@ with open("html/preview.html", "w") as html_file:
 
 	#rewrite the text over the background
 	for sentence in sentences:
-	     ss = sid.polarity_scores(sentence)
-	     i = 0
-	     rgb = [0]
-	     for k in sorted(ss):
-	     	if i is 2:
-	     		r = translate(ss[k], 1, 0, 63, 249)
-	     		g = translate(ss[k], 1, 0, 66, 0)
-	         	b = translate(ss[k], 1, 0, 69, 133)   	
-	        i += 1
 	     sentence = sentence.encode('utf-8').strip()
 	     html = '<span style="color:white;">{}</span>'.format(sentence)
 	     html_file.write(html)
