@@ -10,7 +10,7 @@
 	  |  |  |_/\__/\_/|  \_/\___/  /(__/ \__/    \__/\_/|     
 	                                                          
 	                                                         
-A Workshops on Speculative Workflows
+A Workshop on Speculative Workflows
 
 Conceived by [Silvio Lorusso](http://silviolorusso.com) / [PublishingLab](http://www.publishinglab.nl/)
 
@@ -218,6 +218,8 @@ Push them to the remote repository:
 
 	git push
 
+Remember to include your names and a decription of the rule as a comment.
+
 **There will be conflicts**, but don't worry, we're gonna solve them one by one.
 
 ### What Now?
@@ -247,11 +249,58 @@ Thanks to all the participants! Hope you enjoyed :)
 
 ---
 
+### 9th of January, 2017
+
+	       .-""""-.        .-""""-.
+	      /        \      /        \
+	     /_        _\    /_        _\
+	    // \      / \\  // \      / \\
+	    |\__\    /__/|  |\__\    /__/|
+	     \    ||    /    \    ||    /
+	      \        /      \        /
+	       \  __  /        \  __  / 
+	        '.__.'          '.__.'
+	         |  |            |  |
+	jgs      |  |            |  |
+
+#### Participants
+
+- Luca Classaens
+- Dylan Degeling
+- Lucia Dossin
+- Fabiola Fortuna
+- Nicoleta Pana
+- Margreet Riphagen
+- Thomas Walskaar
+
+
+
+#### Ideas for a Recipe
+
+- make `mood`: sentiment analysis on the text made into a series of data visualizations and maybe shown together with motivational quotes
+- make `vip`: replace sentences with famous people's tweets
+- make `meme`: select meme-worthy sentences to create memes
+- make `lazy`: summarize the book with images only
+- make `scrambledegg`: randomly scrambling the text
+- make `blackbar`: replace all spaces with black bars
+- make `nokia`: publish the book for old nokia phones
+- make `tei`: play with [TEI](http://www.tei-c.org/) format
+- make `poster`: extract data from text and format it as a minimalistic poster
+- make `skills`: produce a 3d shape expressing metrics like word frequency, etc.
+- make `summary`: summarize the book in some meaningful way
+- make `soundtrack`: compose an audio soundtrack for the book    
+
+---
+
+- add description of new rules 
+
+---
+
 License: [GPL3](http://www.gnu.org/copyleft/gpl.html)
 
 The greater part of this framework was developed as part of the [Digital Publishing Toolkit](http://digitalpublishingtoolkit.org) by Michael Murtaugh with the support of [Institute for Network Cultures](http://networkcultures.org)
 and [Creating 010](http://creating010.com), and further developed by André Castro.
 
-Silvio Lorusso 2015
+Silvio Lorusso 2017
 
 ---

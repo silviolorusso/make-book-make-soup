@@ -7,7 +7,11 @@ icmls=$(wildcard icml/*.icml) # select all icml
 
 # just a test
 test: $(allmarkdown)
+<<<<<<< HEAD
 	@echo "Markdown files:" ;
+=======
+	echo "Markdown files:" ;
+>>>>>>> 3aaa3830771b5e692f518bafd5be703d691d8eb2
 	@echo $(allmarkdown)
 
 
@@ -113,6 +117,21 @@ floppy: clean $(allmarkdown) book.md
 	rm /Volumes/FLOPPY/* ; \ # location of the floppy device
 	python ../scripts/floppynetwork.py book.txt /Volumes/FLOPPY
 	# python scripts/floppynetwork.py txt/book.txt ~/Desktop
+
+
+# Make Square (Thomas Walskaar & Fabiola Fortuna 2017)
+# Covert all of whitesspaces into black squares and all of the text and symbols into whitesspaces
+square: clean $(allmarkdown) book.md
+	cd txt && pandoc \
+		--from markdown \
+		--to plain \
+		-s \
+		-o book.txt \
+		../md/book.md ; \
+	mkdir -p ../square
+	python scripts/square.py txt/book.txt > square/square.txt
+
+
 
 noise:
 	@echo 'Making some noise now. This might take a while.'
