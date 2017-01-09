@@ -218,6 +218,8 @@ Push them to the remote repository:
 
 	git push
 
+Remember to include your names and a decription of the rule as a comment.
+
 **There will be conflicts**, but don't worry, we're gonna solve them one by one.
 
 ### What Now?
