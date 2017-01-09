@@ -7,7 +7,7 @@ icmls=$(wildcard icml/*.icml) # select all icml
 
 # just a test
 test: $(allmarkdown)
-	@echo "Markdown files:" ; 
+	echo "Markdown files:" ; 
 	@echo $(allmarkdown)
 
 
@@ -110,6 +110,6 @@ floppy: clean $(allmarkdown) book.md
 		-s \
 		-o book.txt \
 		../md/book.md ; \
-	rm /Volumes/FLOPPY/* ; \ # location of the floppy device
-	python ../scripts/floppynetwork.py book.txt /Volumes/FLOPPY
+	# rm /Volumes/FLOPPY/* ; \ # location of the floppy device
+	python scripts/floppynetwork.py book.txt ~/Desktop
 
