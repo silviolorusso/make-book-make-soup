@@ -249,15 +249,6 @@ Thanks to all the participants! Hope you enjoyed :)
 
 ---
 
-License: [GPL3](http://www.gnu.org/copyleft/gpl.html)
-
-The greater part of this framework was developed as part of the [Digital Publishing Toolkit](http://digitalpublishingtoolkit.org) by Michael Murtaugh with the support of [Institute for Network Cultures](http://networkcultures.org)
-and [Creating 010](http://creating010.com), and further developed by André Castro.
-
-Silvio Lorusso 2017
-
----
-
 ### 9th of January, 2017
 
 	       .-""""-.        .-""""-.
@@ -301,18 +292,15 @@ Silvio Lorusso 2017
 
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - add description of new rules 
+
+---
+
+License: [GPL3](http://www.gnu.org/copyleft/gpl.html)
+
+The greater part of this framework was developed as part of the [Digital Publishing Toolkit](http://digitalpublishingtoolkit.org) by Michael Murtaugh with the support of [Institute for Network Cultures](http://networkcultures.org)
+and [Creating 010](http://creating010.com), and further developed by André Castro.
+
+Silvio Lorusso 2017
+
+---
