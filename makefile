@@ -4,14 +4,9 @@ alldocx=$(wildcard docx/*.docx) # select all docx
 allmarkdown=$(filter-out md/book.md, $(shell ls md/*.md)) # select all markdown
 icmls=$(wildcard icml/*.icml) # select all icml
 
-
 # just a test
 test: $(allmarkdown)
-<<<<<<< HEAD
-	@echo "Markdown files:" ;
-=======
-	echo "Markdown files:" ;
->>>>>>> 3aaa3830771b5e692f518bafd5be703d691d8eb2
+	@echo "Markdown files:" ; 
 	@echo $(allmarkdown)
 
 
@@ -23,11 +18,13 @@ folders:
 	mkdir icml/ ; \
 	mkdir lib/ ; \
 	mkdir scribus_html/ ;
-	mkdir txt/ ;
+	mkdir txt/ 
+	mkdir html/
+	touch html/preview.html;
 
 
 # convert docx to md
-markdowns: $(alldocx)
+markdowns: $(alldocx) 
 	for i in $(alldocx) ; \
 	do md=md/`basename $$i .docx`.md ; \
 	echo "File" $$i $$md ; \
@@ -100,14 +97,14 @@ html: clean $(allmarkdown) book.md
 
 
 # remove outputs
-clean:
-	rm -f md/book.md
-	rm -f book.epub
+clean:  
+	rm -f md/book.md  
+	rm -f book.epub 
 	rm -f *~ */*~  # emacs files
 
 
 # Thomas Walskaar 2016 www.walska.com
-floppy: clean $(allmarkdown) book.md
+floppy: clean $(allmarkdown) book.md 
 	cd txt && pandoc \
 		--from markdown \
 		--to plain \
@@ -116,23 +113,11 @@ floppy: clean $(allmarkdown) book.md
 		../md/book.md ; \
 	rm /Volumes/FLOPPY/* ; \ # location of the floppy device
 	python ../scripts/floppynetwork.py book.txt /Volumes/FLOPPY
-	# python scripts/floppynetwork.py txt/book.txt ~/Desktop
 
+# Sentiment analysis
+# Nicoleta Pana &&&& Luca Claessens
+# needs NLTK to run (pip install nltk)
+# download the vader lexicon (in python, import nltk and run nltk.download())
+sentiment:
+	python scripts/sentiment.py txt/book.txt ;
 
-# Make Square (Thomas Walskaar & Fabiola Fortuna 2017)
-# Covert all of whitesspaces into black squares and all of the text and symbols into whitesspaces
-square: clean $(allmarkdown) book.md
-	cd txt && pandoc \
-		--from markdown \
-		--to plain \
-		-s \
-		-o book.txt \
-		../md/book.md ; \
-	mkdir -p ../square
-	python scripts/square.py txt/book.txt > square/square.txt
-
-
-
-noise:
-	@echo 'Making some noise now. This might take a while.'
-	python scripts/make_noise.py
