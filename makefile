@@ -119,7 +119,7 @@ floppy: clean $(allmarkdown) book.md
 # needs NLTK to run (pip install nltk)
 # download the vader lexicon and punkt tokenizer (in python, import nltk and run nltk.download())
 sentiment:
-	python scripts/sentiment.py txt/.txt ;
+	python scripts/sentiment.py txt/book.txt ;
 
 # Dylan Degeling, Lucia Dossin, Margreet Riphagen
 noise:

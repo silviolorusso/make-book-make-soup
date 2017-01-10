@@ -66,7 +66,6 @@ with open("html/sentiment.html", "w") as html_file:
 	for sentence in sentences:
 	     ss = sid.polarity_scores(sentence)
 	     i = 0
-	     rgb = [0]
 	     for k in sorted(ss):
 	     	if i is 1:
 	     		r = translate(ss[k], 0, 0.5, 43, 254)
