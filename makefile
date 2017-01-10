@@ -117,7 +117,24 @@ floppy: clean $(allmarkdown) book.md
 # Sentiment analysis
 # Nicoleta Pana &&&& Luca Claessens
 # needs NLTK to run (pip install nltk)
-# download the vader lexicon (in python, import nltk and run nltk.download())
+# download the vader lexicon and punkt tokenizer (in python, import nltk and run nltk.download())
 sentiment:
-	python scripts/sentiment.py txt/book.txt ;
+	python scripts/sentiment.py txt/.txt ;
 
+# Dylan Degeling, Lucia Dossin, Margreet Riphagen
+# needs SOX (brew install sox)
+noise:
+	@echo 'Making some noise now. This might take a while.' ;
+	python scripts/make_noise.py
+
+# Make Square (Thomas Walskaar & Fabiola Fortuna 2017)
+# Covert all of whitespaces into black squares and all of the text and symbols into whitespaces
+square: clean $(allmarkdown) book.md 
+	cd txt && pandoc \
+		--from markdown \
+		--to plain \
+		-s \
+		-o book.txt \
+		../md/book.md ; \
+	mkdir -p ../square
+	python scripts/square.py txt/book.txt > square/square.txt

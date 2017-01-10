@@ -41,7 +41,7 @@ sid = SentimentIntensityAnalyzer()
 #load and configure the HTML file we will be outputting to
 print('writing to the HTML file, please wait a few seconds.')
 
-with open("html/preview.html", "w") as html_file:
+with open("html/sentiment.html", "w") as html_file:
   	html_file.write("<html><head> \
   		<style> \
   		@import url('https://fonts.googleapis.com/css?family=Poppins:500'); \
