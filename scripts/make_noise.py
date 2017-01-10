@@ -2,7 +2,7 @@
 import wave, struct, math
 
 #text
-# defines text to be used
+# defines text to be used (should loop through all md files)
 your_file = open("md/01.md","r+")
 text = your_file.read()
 
@@ -37,5 +37,9 @@ for l in range(int(nr)):
             value = int(nr*math.sin(l*freq*math.pi*float(framerate)/float(i + 1)))
             data = struct.pack('<h', value)
             w.writeframesraw( data )
+    if l%300 == 0:
+        print str(l) + '/'+str(nr)+' Adding noise. Please wait.'
+    elif l == (nr - 1):
+        print 'Done. Enjoy.'
 
 w.close()

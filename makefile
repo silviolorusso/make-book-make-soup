@@ -7,11 +7,7 @@ icmls=$(wildcard icml/*.icml) # select all icml
 
 # just a test
 test: $(allmarkdown)
-<<<<<<< HEAD
 	@echo "Markdown files:" ;
-=======
-	echo "Markdown files:" ;
->>>>>>> 3aaa3830771b5e692f518bafd5be703d691d8eb2
 	@echo $(allmarkdown)
 
 
@@ -135,4 +131,4 @@ square: clean $(allmarkdown) book.md
 
 noise:
 	@echo 'Making some noise now. This might take a while.'
-	python scripts/make_noise.py
+	@python scripts/make_noise.py
