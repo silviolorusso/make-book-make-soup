@@ -10,7 +10,7 @@
 	  |  |  |_/\__/\_/|  \_/\___/  /(__/ \__/    \__/\_/|     
 	                                                          
 	                                                         
-A Workshops on Speculative Workflows
+A Workshop on Speculative Workflows
 
 Conceived by [Silvio Lorusso](http://silviolorusso.com) / [PublishingLab](http://www.publishinglab.nl/)
 
