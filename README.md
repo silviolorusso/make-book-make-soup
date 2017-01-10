@@ -292,7 +292,7 @@ Thanks to all the participants! Hope you enjoyed :)
 
 - `make sentiment` (Luca Classaens, Nicoleta Pana): visualization of sentiment analysis of the book's text 
 - `make noise` (Dylan Degeling, Lucia Dossin, Margreet Riphagen): produce a noisy soundtrack based on the length of the words in the book
-- `make square` (Thomas Walskaar, Fabiola Fortuna): create a concrete poetry-like version of text in which whitespaces become black squares  
+- `make square` (Thomas Walskaar, Fabiola Fortuna): create a concrete poetry-like version of text in which the text disappears and whitespaces become black squares  
 
 ---
 
