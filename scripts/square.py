@@ -14,4 +14,3 @@ f = re.sub(r" ", "■", f)
 f = re.sub(r"[^■]", " ", f)
 
 print f
-

@@ -218,8 +218,6 @@ Push them to the remote repository:
 
 	git push
 
-Remember to include your names and a decription of the rule as a comment.
-
 **There will be conflicts**, but don't worry, we're gonna solve them one by one.
 
 ### What Now?
@@ -273,26 +271,28 @@ Thanks to all the participants! Hope you enjoyed :)
 - Margreet Riphagen
 - Thomas Walskaar
 
-
-
 #### Ideas for a Recipe
 
-- make `mood`: sentiment analysis on the text made into a series of data visualizations and maybe shown together with motivational quotes
-- make `vip`: replace sentences with famous people's tweets
-- make `meme`: select meme-worthy sentences to create memes
-- make `lazy`: summarize the book with images only
-- make `scrambledegg`: randomly scrambling the text
-- make `blackbar`: replace all spaces with black bars
-- make `nokia`: publish the book for old nokia phones
-- make `tei`: play with [TEI](http://www.tei-c.org/) format
-- make `poster`: extract data from text and format it as a minimalistic poster
-- make `skills`: produce a 3d shape expressing metrics like word frequency, etc.
-- make `summary`: summarize the book in some meaningful way
-- make `soundtrack`: compose an audio soundtrack for the book    
+- `make mood`: sentiment analysis on the text made into a series of data visualizations and maybe shown together with motivational quotes
+- `make vip`: replace sentences with famous people's tweets
+- `make meme`: select meme-worthy sentences to create memes
+- `make lazy`: summarize the book with images only
+- `make scrambledegg`: randomly scrambling the text
+- `make blackbar`: replace all spaces with black bars
+- `make nokia`: publish the book for old nokia phones
+- `make tei`: play with [TEI](http://www.tei-c.org/) format
+- `make poster`: extract data from text and format it as a minimalistic poster
+- `make skills`: produce a 3d shape expressing metrics like word frequency, etc.
+- `make summary`: summarize the book in some meaningful way
+- `make soundtrack`: compose an audio soundtrack for the book    
 
 ---
 
-- add description of new rules 
+#### Final Recipes
+
+- `make sentiment` (Luca Classaens, Nicoleta Pana): visualization of sentiment analysis of the book's text 
+- `make noise` (Dylan Degeling, Lucia Dossin, Margreet Riphagen): produce a noisy soundtrack based on the length of the words in the book
+- `make square` (Thomas Walskaar, Fabiola Fortuna): create a concrete poetry-like version of text in which the text disappears and whitespaces become black squares  
 
 ---
 

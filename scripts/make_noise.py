@@ -12,7 +12,7 @@ text = text.replace("\n" , " " )
 words = text.split(" ")
 nr = len(words)
 
-filename = "noise.wav"
+filename = "/wav/noise.wav"
 nframes=0
 nchannels=1
 sampwidth=2 # in bytes so 2=16bit, 1=8bit
