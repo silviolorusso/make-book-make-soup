@@ -6,11 +6,7 @@ icmls=$(wildcard icml/*.icml) # select all icml
 
 # just a test
 test: $(allmarkdown)
-<<<<<<< HEAD
 	@echo "Markdown files:" ;
-=======
-	@echo "Markdown files:" ;
->>>>>>> 591dbd523711175bbf04d9826b13b75d1d48786c
 	@echo $(allmarkdown)
 
 
