@@ -127,7 +127,7 @@ noise:
 	@echo 'Making some noise now. This might take a while.' ;
 	python scripts/make_noise.py
 
-# Make Square (Thomas Walskaar & Fabiola Fortuna 2017)
+# Make Square (Thomas Walskaar & Fabiola Fortuna)
 # Covert all of whitespaces into black squares and all of the text and symbols into whitespaces
 square: clean $(allmarkdown) book.md 
 	cd txt && pandoc \
